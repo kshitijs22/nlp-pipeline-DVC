@@ -5,6 +5,7 @@ import yaml
 
 from sklearn.ensemble import GradientBoostingClassifier
 
+#calling n_estimators and lr from params.yaml
 n_estimators=yaml.safe_load(open('params.yaml','r'))['model_building']['n_estimators']
 lr=yaml.safe_load(open('params.yaml','r'))['model_building']['learning_rate']
 

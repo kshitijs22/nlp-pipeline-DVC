@@ -5,6 +5,7 @@ import yaml
 
 import os
 
+#calling test_size from params.yaml
 test_size=yaml.safe_load(open('params.yaml','r'))['data_ingestion']['test_size']
 df=pd.read_csv('https://raw.githubusercontent.com/campusx-official/jupyter-masterclass/main/tweet_emotions.csv')
 
